@@ -5,4 +5,3 @@ Now a days in FB there are many post which we don't want to see, which is not ou
 
 Link : https://drive.google.com/open?id=1cW_zsSwQXsdhJUPZRb4cCJU_nu5cW1jm
 
-This App is develop for Learning Purpose
