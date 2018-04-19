@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ibrahim.snc.FillCollege">
+
+    <ScrollView
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="20sp"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/college_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="18dp"
+                android:src="@drawable/college"
+                app:civ_border_color="#819ca9"
+                app:civ_border_width="2dp"
+                />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/college_image"
+                android:layout_alignEnd="@+id/college_image"
+                app:srcCompat="@drawable/ic_camera_alt_black_24dp" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputLayou"
+                android:layout_marginTop="15sp"
+                android:layout_below="@+id/college_image">
+                <EditText
+                    android:id="@+id/Colege_Name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Name" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputLayout2"
+                android:layout_marginTop="15sp"
+                android:layout_below="@+id/textInputLayou">
+                <EditText
+                    android:id="@+id/College_Description"
+                    android:layout_width="match_parent"
+                    android:inputType="textEmailAddress"
+                    android:layout_height="wrap_content"
+                    android:hint="College Description" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textInputLayout3"
+                android:layout_marginTop="15sp"
+                android:layout_below="@+id/textInputLayout2">
+
+                <EditText
+                    android:id="@+id/College_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textInputLayout3"
+                    android:layout_centerHorizontal="true"
+                    android:hint="College Location" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/submit_college"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textInputLayout3"
+                android:textColor="#ffff"
+                android:background="@color/colorPrimary"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20sp"
+                android:text="Button" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
